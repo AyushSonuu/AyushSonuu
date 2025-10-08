@@ -4,7 +4,6 @@
 <p align="center">
   Data Science & Deep Learning background | RAG Workflows | Context Engineering | LangFuse & LangSmith Expert
 </p>
----
 
 ### 🧠 About Me
 
