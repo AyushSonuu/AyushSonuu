@@ -1,7 +1,9 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&pause=1000&color=00F5D4&center=true&vCenter=true&width=850&lines=Hey+I'm+Ayush+Sonu+👋;AI+Engineer+who+builds+Reliable+Agentic+Systems;LangChain+•+LangGraph+•+RAG+•+LangFuse" alt="Typing Intro" />
+  <strong>Ayush Sonu — AI Engineer | Building Reliable Agentic AI Systems with LangChain & LangGraph</strong>
 </h1>
-
+<p align="center">
+  Data Science & Deep Learning background | RAG Workflows | Context Engineering | LangFuse & LangSmith Expert
+</p>
 ---
 
 ### 🧠 About Me
