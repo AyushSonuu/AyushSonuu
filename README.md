@@ -1,5 +1,5 @@
 <h1 align="center">
-  <strong>Ayush Sonu — AI Engineer | Building Reliable Agentic AI Systems with LangChain & LangGraph</strong>
+  <strong>Ayush Sonu — AI Engineer | Building Reliable Agentic AI Systems</strong>
 </h1>
 <p align="center">
   Data Science & Deep Learning background | RAG Workflows | Context Engineering | LangFuse & LangSmith Expert
