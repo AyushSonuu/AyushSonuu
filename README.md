@@ -7,7 +7,7 @@
 
 ### 🧠 About Me
 
-I’m **Ayush Sonu**, an **AI Engineer** with a background in **Data Science** and **Deep Learning**.  
+I’m **Ayush Sonu**, an **AI Engineer** with a background in **Generative AI**, **Data Science** and **Deep Learning**.  
 I focus on building **agentic AI workflows**, **context-aware RAG systems**, and **evaluation-driven pipelines** to make LLMs more **accurate and reliable**.
 
 - 💼 **AI Engineer** at *Impressico Business Solutions*  
