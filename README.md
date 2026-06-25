@@ -12,23 +12,22 @@
 
 ### 🧠 About Me
 
-I'm an **AI Engineer** who builds systems that are **reliable by design** — not just prompt-wrangled.
+I build production-grade AI systems that combine modern LLM capabilities with robust backend engineering. My work sits at the intersection of AI infrastructure, distributed systems, and scalable architecture.
 
-My work spans the full depth of modern AI + Backend Engineering:
+- Designed and shipped **agentic pipelines** (LangGraph) for production AI applications
+- Built **async backend services** with FastAPI + PostgreSQL + Redis
+- Implemented an **MCP host + intelligent tool routing layer** with a Skills Protocol
+- Contributed to open-source **LangGraph agent hosting infrastructure** (Aegra)
+- Builds **RAG pipelines with evaluation loops** — LangFuse, LangSmith, Ragas
+- Thinks in **system design** — LLD patterns + HLD trade-offs, not just code
 
-- 🤖 **Agentic AI** — LangGraph multi-agent workflows, tool-use, planning, memory systems
-- 🔍 **RAG Pipelines** — adaptive retrieval, hybrid search, semantic chunking, eval-driven tuning
-- ⚙️ **Backend Systems** — FastAPI, PostgreSQL, Redis — production-grade async APIs
-- 🏗️ **System Design** — LLD (SOLID, design patterns, clean arch) + HLD (scalability, caching, queues)
-- 📊 **Evaluation** — LangFuse, LangSmith, Ragas — feedback loops, not just vibes
-
-Currently at **SAP** &nbsp;|&nbsp; Previously at **Impressico Business Solutions**
+> _Reliable AI starts with reliable systems._
 
 ---
 
 ### ⚙️ Tech Stack
 
-#### 🤖 AI / Agentic Systems
+#### 🤖 AI
 ![LangChain](https://img.shields.io/badge/LangChain-1A1A1A?style=flat&logo=langchain&logoColor=00F5D4)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1A1A1A?style=flat&logo=langgraph&logoColor=00F5D4)
 ![LangFuse](https://img.shields.io/badge/LangFuse-1A1A1A?style=flat&logo=langfuse&logoColor=00F5D4)
@@ -36,34 +35,107 @@ Currently at **SAP** &nbsp;|&nbsp; Previously at **Impressico Business Solutions
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
 
-#### 🛠️ Backend & Infrastructure
+#### 🛠️ Backend
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat&logo=sqlalchemy&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 ![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
+
+#### 🗄️ Data & Infra
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL_+_pgvector-336791?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 #### 🔍 Vector & Search
 ![Qdrant](https://img.shields.io/badge/Qdrant-1A1A1A?style=flat&logo=qdrant&logoColor=00F5D4)
 ![FAISS](https://img.shields.io/badge/FAISS-1A1A1A?style=flat&logoColor=white)
-![Weaviate](https://img.shields.io/badge/Weaviate-1A1A1A?style=flat&logoColor=white)
 
 ---
 
-### 💡 What I Build
+### 💼 Selected Work
 
-> _Systems that reason, scale, and hold up under real load._
+**🔹 MCP Host + Intelligent Tool Execution System**
+`MCP` · `Skills Protocol` · `LangGraph` · `FastAPI`
+- Integrated an **MCP host** as a first-class feature inside a production AI system
+- Built a **runtime tool discovery and routing layer** that dynamically selects and executes the most relevant MCP tools for a task — no hardcoded routing
+- Implemented a **Skills Protocol** layer: higher-level skills compose MCP tools to perform multi-step workflows
+- Architecture: `Task → Skill → MCP Tool(s) → Result` with runtime tool resolution
 
-| Domain | What I Do |
-|--------|-----------|
-| 🤖 **Agentic AI** | LangGraph orchestration, tool-use, multi-agent pipelines, memory systems |
-| 🔍 **RAG Systems** | Hybrid search, semantic chunking, retrieval evaluation, Qdrant / FAISS |
-| ⚙️ **Backend APIs** | FastAPI async services, PostgreSQL schemas, Redis caching & pub/sub |
-| 🏗️ **System Design** | Clean LLD with patterns + HLD that scales beyond MVP |
-| 📊 **Eval Loops** | LangFuse / LangSmith / Ragas dashboards — quantified quality, not guesswork |
+---
+
+**🔹 Enterprise RAG Platform**
+`FastAPI` · `LangGraph` · `PostgreSQL + pgvector` · `Redis` · `Qdrant`
+- Hybrid retrieval (semantic + BM25) with metadata filtering
+- Streaming responses over SSE
+- Agent workflows with tool-use and planning
+- Evaluation pipeline via LangFuse + Ragas
+
+---
+
+**🔹 Agentic Workflow Engine**
+`LangGraph` · `Redis pub/sub` · `Celery` · `FastAPI`
+- Multi-agent orchestration with stateful memory
+- Async background task execution with Redis as Celery broker
+- Real-time status streaming to clients
+
+---
+
+**🔹 [Aegra](https://github.com/ibbybuilds/aegra) — Open Source Contribution**
+`LangGraph Agent Protocol` · `Agent Hosting Infrastructure`
+- Contributed to agent hosting layer for reliability at scale
+- Focused on production-grade agent serving patterns
+
+---
+
+### ⚡ Backend Architecture
+
+```
+              Client
+                 │
+                 ▼
+         FastAPI  (REST · SSE · Auth · Rate Limiting)
+                 │
+     ┌───────────┼────────────┐
+     ▼           ▼            ▼
+PostgreSQL     Redis        Celery Worker
+(ACID · jsonb  (cache ·      (background tasks)
+ · pgvector)    session ·         │
+                pub-sub ·         ▼
+                rate limit)   LLM APIs
+                                  │
+                                  ▼
+                             LangFuse / Eval
+```
+
+---
+
+### 🤖 Agent System Architecture
+
+```
+          User Request
+               │
+               ▼
+         FastAPI API
+               │
+               ▼
+       LangGraph Runtime
+               │
+     ┌─────────┼──────────┐
+     ▼         ▼          ▼
+ Retrieval   Tools      Memory
+     │         │          │
+     └────┬────┘──────────┘
+          ▼
+       LLM APIs
+          │
+          ▼
+   LangFuse / Eval
+```
 
 ---
 
@@ -76,31 +148,23 @@ SOLID Principles                       Distributed System Principles
 GoF Design Patterns                    Horizontal Scaling + Load Balancing
 Clean Architecture                     Caching (Redis — cache-aside, write-through)
 Repository / Service Layer             Message Queues (Celery + Redis / SQS)
-Dependency Injection                   Database Design (PostgreSQL + sharding)
+Dependency Injection                   Database Design (Normalization, Indexing, Partitioning)
 Domain-Driven Design                   API Gateway + Rate Limiting
-Async Patterns (FastAPI + asyncio)     CAP Theorem & eventual consistency
+Async / ASGI Internals                 CAP Theorem & eventual consistency
 ```
 
 ---
 
-### ⚡ FastAPI + PostgreSQL + Redis — My Backend Trio
+### 🌱 Currently Exploring
 
-```
-Request → FastAPI (async) → PostgreSQL (persistent store)
-                          → Redis     (cache / session / pub-sub / queue)
-                          → Celery    (background tasks via Redis broker)
-```
-
-- **FastAPI** — async-first, Pydantic-validated, auto-documented REST APIs
-- **PostgreSQL** — relational backbone: complex queries, ACID transactions, jsonb for semi-structured data
-- **Redis** — multi-role: cache layer (cache-aside pattern), session store, pub/sub bus, Celery broker
+`AI Runtime Architecture` &nbsp;·&nbsp; `ASGI Internals` &nbsp;·&nbsp; `Kafka / Redpanda`  
+`Kubernetes` &nbsp;·&nbsp; `Event-driven Architectures` &nbsp;·&nbsp; `Distributed Systems`
 
 ---
 
-### 🚀 Open Source
+### 🎯 Interested In
 
-- **[Aegra](https://github.com/ibbybuilds/aegra)** — Open-source framework implementing the [LangGraph Agent Protocol](https://github.com/langchain-ai/agent-protocol).
-  Contributed to agent hosting infrastructure — reliability + scale focus.
+`AI Infrastructure` &nbsp;·&nbsp; `Agent Runtime Design` &nbsp;·&nbsp; `MCP` &nbsp;·&nbsp; `Vector Search` &nbsp;·&nbsp; `Retrieval Systems`
 
 ---
 
@@ -108,14 +172,8 @@ Request → FastAPI (async) → PostgreSQL (persistent store)
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=AyushSonuu&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AyushSonuu&theme=react-dark&hide_border=true&area=true" height="260"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushSonuu&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushSonuu&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
 </p>
 
 ---
@@ -129,4 +187,4 @@ Request → FastAPI (async) → PostgreSQL (persistent store)
 
 ---
 
-<h3 align="center">"Engineering reliable AI — from the model call to the system design."</h3>
+<h3 align="center">"Reliable AI starts with reliable systems."</h3>
